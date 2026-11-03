@@ -9,7 +9,7 @@ import {
   ServiceIcon,
   SocialIcon,
 } from './Icons';
-import { processSteps, projects, services, siteConfig } from './siteData';
+import { assetPath, processSteps, projects, services, siteConfig } from './siteData';
 
 const navItems = [
   ['Home', '#home'],
@@ -100,7 +100,7 @@ function Hero() {
 
         <div className="hero-visual reveal reveal-delay">
           <div className="hero-image-wrap">
-            <img src="/images/hero-house.svg" alt="Stylized illustration of a renovated home interior" />
+            <img src={assetPath('images/hero-house.svg')} alt="Stylized illustration of a renovated home interior" />
             <div className="hero-badge">
               <span className="badge-icon">TT</span>
               <span><strong>Built with skill.</strong><small>Finished with pride.</small></span>
@@ -166,10 +166,10 @@ function About() {
       <div className="container about-layout">
         <div className="about-visual">
           <div className="about-image-main">
-            <img src="/images/about-craft.svg" alt="Craftsperson planning a home improvement project" />
+            <img src={assetPath('images/about-craft.svg')} alt="Craftsperson planning a home improvement project" />
           </div>
           <div className="about-image-small">
-            <img src="/images/about-detail.svg" alt="Close-up illustration of careful finish work" />
+            <img src={assetPath('images/about-detail.svg')} alt="Close-up illustration of careful finish work" />
           </div>
           <div className="about-stamp" aria-label="Quality, honesty, craftsmanship">
             <svg viewBox="0 0 120 120" aria-hidden="true">

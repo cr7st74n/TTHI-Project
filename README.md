@@ -72,3 +72,8 @@ Update these values in `src/siteData.js` before publishing:
 - Facebook, Instagram, and YouTube links
 
 Also review all service descriptions and add real project photos before launching.
+
+## Publish on GitHub Pages
+
+This project includes a GitHub Actions deployment workflow and automatic GitHub Pages path handling. See [`DEPLOY_TO_GITHUB_PAGES.md`](DEPLOY_TO_GITHUB_PAGES.md) for the complete steps.
+

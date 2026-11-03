@@ -1,4 +1,7 @@
 // Edit this file first when you customize the website.
+
+// Keeps images working locally and when the site is hosted in a GitHub Pages subfolder.
+export const assetPath = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 export const siteConfig = {
   businessName: "Tony's Talent Home Improvement",
   shortName: "Tony's Talent",
@@ -57,37 +60,37 @@ export const projects = [
   {
     title: 'Modern Kitchen Refresh',
     category: 'Kitchens',
-    image: '/images/project-kitchen.svg',
+    image: assetPath('images/project-kitchen.svg'),
     description: 'Cabinets, backsplash, lighting, and finish carpentry.',
   },
   {
     title: 'Bathroom Tile Upgrade',
     category: 'Bathrooms',
-    image: '/images/project-bathroom.svg',
+    image: assetPath('images/project-bathroom.svg'),
     description: 'New tilework, vanity, fixtures, and paint.',
   },
   {
     title: 'Custom Storage Wall',
     category: 'Carpentry',
-    image: '/images/project-carpentry.svg',
+    image: assetPath('images/project-carpentry.svg'),
     description: 'Built-in shelving and custom trim details.',
   },
   {
     title: 'Living Room Renovation',
     category: 'Interiors',
-    image: '/images/project-living-room.svg',
+    image: assetPath('images/project-living-room.svg'),
     description: 'Flooring, drywall repair, paint, and trim.',
   },
   {
     title: 'Exterior Entry Repair',
     category: 'Exterior',
-    image: '/images/project-exterior.svg',
+    image: assetPath('images/project-exterior.svg'),
     description: 'Entry repair, weatherproofing, and finish work.',
   },
   {
     title: 'Flooring Installation',
     category: 'Flooring',
-    image: '/images/project-flooring.svg',
+    image: assetPath('images/project-flooring.svg'),
     description: 'Durable plank flooring with clean transitions.',
   },
 ];
